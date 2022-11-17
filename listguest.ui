@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>listguest</class>
+ <widget class="QDialog" name="listguest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1300</width>
+    <height>603</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1300</width>
+    <height>603</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="remove">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>530</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	background-color: rgb(50, 50, 50);
+	color: rgb(12, 162, 255);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>XÓA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>530</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	background-color: rgb(50, 50, 50);
+	color: rgb(12, 162, 255);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>THOÁT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>10</y>
+     <width>361</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 700 italic 28pt &quot;Roman&quot;;
+
+color: rgb(12, 57, 255);</string>
+   </property>
+   <property name="text">
+    <string>LUXURYOUS HOTEL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/New folder/search.png);
+border-radius:10px;
+}
+QPushButton:hover{
+	
+	background-color: rgb(175, 175, 175);
+
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="load">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>530</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	background-color: rgb(50, 50, 50);
+	color: rgb(12, 162, 255);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>CHI TIẾT</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>130</y>
+     <width>711</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>180</y>
+     <width>281</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="ename">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+font: 700 12pt &quot;Segoe UI&quot;;
+border:none;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="eccd">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+font: 700 12pt &quot;Segoe UI&quot;;
+border:none;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="ephone">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+font: 700 12pt &quot;Segoe UI&quot;;
+border:none;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="eaddress">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+font: 700 12pt &quot;Segoe UI&quot;;
+border:none;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="eroom">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+font: 700 12pt &quot;Segoe UI&quot;;
+border:none;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="esta">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+font: 700 12pt &quot;Segoe UI&quot;;
+border:none;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="index">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>511</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Nhập ID </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Họ Và Tên</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>63</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>CCCD</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>63</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>SĐT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Địa Chỉ</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>390</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Mã Phòng</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>63</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Status</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="update">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>530</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	background-color: rgb(50, 50, 50);
+	color: rgb(12, 162, 255);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>CẬP NHẬT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>581</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/empcardbg.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>561</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 109));
+color: rgb(255, 255, 255);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>                                                        GUEST INFO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>571</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(44, 44, 44);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1301</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(44, 44, 44);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>80</y>
+     <width>751</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(117, 117, 117);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_12</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label</zorder>
+  <zorder>label_9</zorder>
+  <zorder>index</zorder>
+  <zorder>remove</zorder>
+  <zorder>exit</zorder>
+  <zorder>label_2</zorder>
+  <zorder>save</zorder>
+  <zorder>load</zorder>
+  <zorder>tableView</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_8</zorder>
+  <zorder>update</zorder>
+  <zorder>label_10</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
