@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>checkout</class>
+ <widget class="QDialog" name="checkout">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1138</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="checkout_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>610</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 10pt &quot;Segoe UI&quot;;
+background-color: rgb(34, 150, 200);
+background-color: qlineargradient(spread:pad, x1:0.278977, y1:0.268, x2:0.808, y2:0.812773, stop:0.196347 rgba(0, 170, 255, 255), stop:1 rgba(160, 230, 255, 255));
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(150, 150, 150);
+	color: rgb(34, 34, 34);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>TRẢ PHÒNG</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>610</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 10pt &quot;Segoe UI&quot;;
+background-color: rgb(34, 150, 200);
+background-color: qlineargradient(spread:pad, x1:0.278977, y1:0.268, x2:0.808, y2:0.812773, stop:0.196347 rgba(0, 170, 255, 255), stop:1 rgba(160, 230, 255, 255));
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(150, 150, 150);
+	color: rgb(34, 34, 34);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>THOÁT</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cid">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>150</y>
+     <width>113</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cname">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>210</y>
+     <width>311</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cccd">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>270</y>
+     <width>301</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cphone">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>330</y>
+     <width>301</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="caddress">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>390</y>
+     <width>231</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ctime_in">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>440</y>
+     <width>291</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbRoomList">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>100</y>
+     <width>82</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>100</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(34, 34, 34);</string>
+   </property>
+   <property name="text">
+    <string>MÃ PHÒNG</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>150</y>
+     <width>63</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(34, 34, 34);</string>
+   </property>
+   <property name="text">
+    <string>ID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>210</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(34, 34, 34);</string>
+   </property>
+   <property name="text">
+    <string>HỌ VÀ TÊN</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>270</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(34, 34, 34);</string>
+   </property>
+   <property name="text">
+    <string>CCCD/CMND</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>330</y>
+     <width>63</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(34, 34, 34);</string>
+   </property>
+   <property name="text">
+    <string>SĐT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>390</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(34, 34, 34);</string>
+   </property>
+   <property name="text">
+    <string>ĐỊA CHỈ</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>440</y>
+     <width>251</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(34, 34, 34);</string>
+   </property>
+   <property name="text">
+    <string>THỜI GIAN NHẬN PHÒNG</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>480</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 10pt &quot;Segoe UI&quot;;
+	background-color: rgb(117, 117, 117);
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(136, 136, 136);
+	color: rgb(34, 34, 34);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>THÀNH TIỀN</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="money">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>480</y>
+     <width>201</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pay">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>530</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 10pt &quot;Segoe UI&quot;;
+	background-color: rgb(117, 117, 117);
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(136, 136, 136);
+	color: rgb(34, 34, 34);
+font: 900 10pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>THANH TOÁN</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>10</y>
+     <width>361</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 italic 14pt &quot;Fixedsys&quot;;
+font: 700 italic 22pt &quot;Source Code Pro&quot;;
+font: 700 italic 28pt &quot;Roman&quot;;
+
+color: rgb(33, 55, 255);</string>
+   </property>
+   <property name="text">
+    <string>LUXURYOUS HOTEL</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

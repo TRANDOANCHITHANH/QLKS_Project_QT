@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>secmain</class>
+ <widget class="QDialog" name="secmain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1102</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="checkin">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>240</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 12pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0.278977, y1:0.268, x2:0.808, y2:0.812773, stop:0.196347 rgba(0, 170, 255, 255), stop:1 rgba(160, 230, 255, 255));
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 11pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>       CHECKIN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="checkout">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>310</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 12pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0.278977, y1:0.268, x2:0.808, y2:0.812773, stop:0.196347 rgba(0, 170, 255, 255), stop:1 rgba(160, 230, 255, 255));
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 11pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>          CHECK OUT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="availableroom">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>380</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 12pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0.278977, y1:0.268, x2:0.808, y2:0.812773, stop:0.196347 rgba(0, 170, 255, 255), stop:1 rgba(160, 230, 255, 255));
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 11pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>   ROOM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="history">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>450</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 12pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0.278977, y1:0.268, x2:0.808, y2:0.812773, stop:0.196347 rgba(0, 170, 255, 255), stop:1 rgba(160, 230, 255, 255));
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 11pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>  GUEST</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>371</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 italic 28pt &quot;Roman&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>LUXURYOUS HOTEL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="introduce">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>520</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton{
+	font: 700 12pt &quot;Segoe UI&quot;;
+background-color: qlineargradient(spread:pad, x1:0.278977, y1:0.268, x2:0.808, y2:0.812773, stop:0.196347 rgba(0, 170, 255, 255), stop:1 rgba(160, 230, 255, 255));
+color: rgb(20, 20, 20);
+border-radius:10px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
+font: 900 11pt &quot;Segoe UI&quot;;
+border-radius:10px;
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>        EMPLOYEE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>380</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/server.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>450</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/guest-list.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>520</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/employee.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>361</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/Corporate Management.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>100</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Hotel Management System</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>130</y>
+     <width>221</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Optimizing work productivity</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>381</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 49, 49);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>0</y>
+     <width>731</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(75, 75, 75);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>530</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="date">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>570</y>
+     <width>181</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>120</y>
+     <width>321</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/empcardbg.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>121</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 71));
+font: 900 15pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>     Total no. of Guest</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>320</y>
+     <width>321</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/attendancebg.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>110</y>
+     <width>321</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/company_card.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>120</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 900 15pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Total no. of Room</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total_guest">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>240</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total_room">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>240</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>160</y>
+     <width>151</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/bar-graph.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>360</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/bar-graph1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>150</y>
+     <width>141</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/bar-chart.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>240</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/calendar-date.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>310</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/New folder/check-out (1).png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewtotalg">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>250</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+border:none;
+}
+QPushButton:hover{
+	background-color: rgb(54, 120, 226);
+   
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>VIEW</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewtotale">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>580</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+border:none;
+}
+QPushButton:hover{
+	background-color: rgb(139, 3, 5);
+   
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>VIEW</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewtotalr">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>250</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+border:none;
+}
+QPushButton:hover{
+	background-color: rgb(13, 112, 11);
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>VIEW</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>320</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 71));
+font: 900 15pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>            Total payment</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewtotalg_">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>450</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.02, x2:1, y2:0.97, stop:1 rgba(0, 0, 0, 0));
+border:none;
+}
+QPushButton:hover{
+	background-color: rgb(143, 8, 11);
+   
+}
+QPushButton:pressed{
+   
+	background-color: rgb(37, 95, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>VIEW</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total_pay">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>440</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 700 16pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>viewtotale</zorder>
+  <zorder>label_14</zorder>
+  <zorder>label_12</zorder>
+  <zorder>total_guest</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_10</zorder>
+  <zorder>checkin</zorder>
+  <zorder>checkout</zorder>
+  <zorder>availableroom</zorder>
+  <zorder>history</zorder>
+  <zorder>introduce</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_9</zorder>
+  <zorder>time</zorder>
+  <zorder>date</zorder>
+  <zorder>label_13</zorder>
+  <zorder>label_15</zorder>
+  <zorder>label_17</zorder>
+  <zorder>total_room</zorder>
+  <zorder>label_18</zorder>
+  <zorder>label_19</zorder>
+  <zorder>label_20</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>viewtotalg</zorder>
+  <zorder>viewtotalr</zorder>
+  <zorder>label_22</zorder>
+  <zorder>viewtotalg_</zorder>
+  <zorder>total_pay</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
